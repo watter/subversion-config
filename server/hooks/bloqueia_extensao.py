@@ -5,9 +5,7 @@ import sys, pysvn, optparse
  	 	
 #mensagem de erro apresentada ao usuario caso ele tente fazer um commit com arquivos nao permitidos
 
-#error_msg = """\n\nNao foi possivel realizar o commit. \n\n\tAlguns arquivos nao sao versionados no SVN, eles devem ser colocados em outros locais:\n\t\t + jar,war,ear -> Archiva (maven.celepar.parana)\n\t\t + od(t|f), doc,xls,ppt,pdf -> Documentador (www.documentador.pr.gov.br)\n\t\t + tmp,swp,bak,out,exe,rar,zip -> nao sao permitidos \n\n\tOs seguintes arquivos do commit foram IMPEDIDOS de entrar no controle de versao:"""
-
-error_msg = u"""\n\nNão foi possível realizar o commit. \n\n\tAlguns arquivos não são versionados no SVN, eles devem ser colocados em outros locais:\n\n\t\t + jar,war,ear -> Archiva (maven.celepar.parana)\n\n\t\t + od(t|f), doc,xls,ppt,pdf -> Documentador (www.documentador.pr.gov.br)\n\n\t\t + tmp,swp,bak,out,exe,rar,zip -> não são permitidos \n\n\tOs seguintes arquivos do commit foram impedidos de entrar no controle de versão:"""
+error_msg = u"""\n\nNão foi possível realizar o commit. \n\n\tAlguns arquivos não são versionados no SVN, eles devem ser colocados em outros locais:\n\n\t\t + jar,war,ear -> Archiva\n\n\t\t + tmp,swp,bak,out,exe,rar,zip -> não são permitidos \n\n\tOs seguintes arquivos do commit foram impedidos de entrar no controle de versão:"""
 
 
 #lista contendo as extensoes nao permitidas
